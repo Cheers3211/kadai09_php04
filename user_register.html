@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ユーザー登録</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #fce4ec;
+            padding: 30px;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #c2185b;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            background: #c2185b;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background: #ad1457;
+        }
+    </style>
+</head>
+<body>
+    <h1>ユーザー登録フォーム</h1>
+    <form method="POST" action="login_act.php">
+      <label>ID：<input type="text" name="lid"></label><br>
+      <label>PW：<input type="password" name="lpw"></label><br>
+      <input type="submit" value="ログイン">
+    </form>
+
+</body>
+</html>
